@@ -1,0 +1,153 @@
+/* --- Variables --- */
+
+:root {
+    --theme-color: #00ff9c;
+}
+
+
+/* --- Main Styles --- */
+
+body {
+    margin: 0px 0px;
+}
+
+.header {
+    background-color: #666686;
+    height: 500px;
+}
+
+/* --- Menu --- */
+
+.dropdown {
+    margin: 40px 5px 0px 0px;
+    position: relative;
+    display: inline-block;
+    justify-content: left;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: left;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 5px 15px 0px #363636;
+}
+
+.dropdown:hover .dropdown-content {
+    cursor: pointer;
+    display: block;
+}
+
+.dropdown-content ul li {
+    list-style: none;
+}
+
+.dropdown-content ul li:hover {
+    background-color: var(--theme-color);
+}
+
+/* --- Logo --- */
+
+.img.logo {
+    margin: 20px 0px 0px 5px;
+}
+
+/* --- Main Navigation --- */
+
+.navigation {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 16px;
+}
+
+#main {
+    margin: 20px 150px 0px 70px;
+}
+
+nav#main ul {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+
+nav#main ul li {
+    list-style: none;
+    color: white;
+    display: inline-flex;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    margin: 15px 10px 0px 10px;
+    justify-content: center;
+}
+
+nav#main ul li:hover {
+    cursor: pointer;
+    background-color: var(--theme-color);
+    color: #363636;
+    box-shadow: 5px 5px;
+    transform: skew(0deg, -10deg);
+}
+
+/* --- Search --- */
+
+.img.search {
+    margin: 30px 0px 0px 0px;
+    cursor: pointer;
+    justify-content: right;
+}
+
+/* --- Main Header Text --- */
+
+.header-text {
+    font-size: 42px;
+    color: var(--theme-color);
+    font-family: 'Niconne', cursive;
+    text-align: center;
+    text-shadow: 5px 2px 2px #363636;
+}
+
+/* --- Contents --- */
+
+.second-header {
+    margin: 20px 100px;
+    font-family: 'Niconne', cursive;
+    font-size: 60px;
+    width: 30%;
+    color: #666666;
+}
+
+.last-word {
+    color: var(--theme-color);
+}
+
+.second-content {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 100px;
+}
+
+/* --- Responsive Design --- */
+
+@media only screen and (max-width: 1075px) {
+
+    /* Hide Main Navigation */
+
+    nav#main {
+        display: none;
+    }
+
+    /* Decrease Size of Main Header Text */
+
+    .header-text {
+        font-size: 36px;
+    }
+
+    /* Spread out Second Header */
+
+    .second-header {
+        width: 50%;
+    }
+}
